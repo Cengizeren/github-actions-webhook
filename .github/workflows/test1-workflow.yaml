@@ -3,8 +3,7 @@ on:
   workflow_dispatch:
   # Allows external webhook trigger
   repository_dispatch:
-    types:
-      - webhook
+    types: [webhook]
 jobs:
   run_tests:
     runs-on: ubuntu-20.04
